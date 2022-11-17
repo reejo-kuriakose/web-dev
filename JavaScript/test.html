@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr=[22,10,4,5,9,2,1];
+        console.log(arr.sort((a,b)=>b-a)) // to sort as integer instead of string //descending order
+        console.log(arr.sort((a,b)=>a-b)); // ascending order
+        var str = arr.join("/") // here '/' is the seperator // default seperator is comma
+        console.log(str)
+        console.log(str.split('/'))
+        var name="Reejo";
+        console.log(name.split('')); // to split strings
+
+        var currentDate = new Date();
+        console.log(currentDate);
+
+        function change(){
+            var input = document.getElementById('input');
+            input.style.borderColor="black";
+        }
+
+    </script>
+</head>
+<body>
+    <h1 id="heading"></h1>
+    <input id="input" style="border-color:red;" type="text" onfocus="change()">
+    <input type="button" value="Square">
+</body>
+</html>
